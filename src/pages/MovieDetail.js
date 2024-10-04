@@ -55,11 +55,19 @@ export default function MovieDetail() {
   }
 
   return (
-    <div>
-      <h1>{movie.title}</h1>
-      <img src={movie.img} alt={movie.title} />
-      <p>Genre: {movie.genre}</p>
-      <p>Rating: {movie.rate}</p>
+    <div style={{ display: "flex", justifyContent: "center" }}>
+      <div>
+        <h1 style={{ color: "white", textAlign: "center" }}>{movie.title}</h1>
+        <img
+          src={movie.img}
+          alt={movie.title}
+          style={{ width: "400px", marginBottom: "2rem" }}
+        />
+        <div style={{ color: "white", textAlign: "center" }}>
+          <p>{movie.genre}</p>
+          <p>{movie.rate}/5</p>
+        </div>
+      </div>
     </div>
   );
 }
