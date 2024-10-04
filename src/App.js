@@ -5,6 +5,7 @@ import { MdGroup } from "react-icons/md";
 import "./App.css";
 import Movie from "./pages/Movie";
 import Profile from "./pages/Profile";
+import MovieDetail from "./pages/MovieDetail";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/movie" element={<Movie />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/movie/:id" element={<MovieDetail />} />
       </Routes>
       <footer>
         <NavLink to="/movie" className="iconWrapper">

@@ -2,10 +2,12 @@ import { Fragment } from "react";
 import CardBig from "../components/CardBig";
 import CardSmall from "../components/CardSmall";
 import "./Movie.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Movie() {
   const STAR_COLOR = "rgb(220, 117, 21)";
   const STAR_SIZE = 20;
+  const navigate = useNavigate();
 
   const poster = [
     {
@@ -75,6 +77,10 @@ export default function Movie() {
     },
   ];
 
+  const handleCardClick = (id) => {
+    navigate(`/movie/${id}`);
+  };
+
   return (
     <>
       <p id="movies">Top Movies</p>
@@ -105,7 +111,7 @@ export default function Movie() {
                 genre={item.genre}
                 size={STAR_SIZE}
                 color={STAR_COLOR}
-                onClick={() => alert("item id = " + item.id)}
+                onClick={() => handleCardClick(item.id)}
               />
               {data.length === index + 1 && (
                 <div style={{ marginBottom: 80 }} />
@@ -123,7 +129,7 @@ export default function Movie() {
                 genre={item.genre}
                 size={STAR_SIZE}
                 color={STAR_COLOR}
-                onClick={() => alert("item id = " + item.id)}
+                onClick={() => handleCardClick(item.id)}
               />
               {data.length === index + 1 && (
                 <div style={{ marginBottom: 80 }} />
