@@ -11,69 +11,70 @@ export default function Movie() {
 
   const poster = [
     {
-      title: "John Wick",
+      title: "John Wick: Chapter 4",
       id: 1,
-      rate: 4,
-      genre: "action, crime",
-      img: "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/6d3d1461d50778271845ce7ec81ba2c5d76a20f7f84e5061cd099aabaedc77f9._RI_TTW_.jpg",
+      rate: 4.5,
+      genre: "Action, Crime",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM6X1sACw0mXLCMG-KBzbHNmN5ZgrD39xpkQ&s",
     },
     {
-      title: "John Wick",
+      title: "The Batman",
       id: 2,
-      rate: 4,
-      genre: "action, crime",
-      img: "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/6d3d1461d50778271845ce7ec81ba2c5d76a20f7f84e5061cd099aabaedc77f9._RI_TTW_.jpg",
+      rate: 4.7,
+      genre: "Action, Crime, Drama",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrzzFYczgufsR1VZbadYvtIvRKYnNnb8tz9w&s",
     },
     {
-      title: "John Wick",
+      title: "Dune",
       id: 3,
-      rate: 4,
-      genre: "action, crime",
-      img: "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/6d3d1461d50778271845ce7ec81ba2c5d76a20f7f84e5061cd099aabaedc77f9._RI_TTW_.jpg",
+      rate: 4.6,
+      genre: "Adventure, Drama, Sci-Fi",
+      img: "https://images.squarespace-cdn.com/content/v1/552672afe4b0c26feae01486/1637782853123-J37VI8VX2QL82KJP5U5W/DUNE_Indy_Movie_Poster_1.jpeg?format=500w",
     },
   ];
+
   const data = [
     {
-      title: "Oppenheimer",
+      title: "John Wick: Chapter 4",
       id: 1,
-      rate: 4,
-      genre: "biography, drama, history",
-      img: "https://m.media-amazon.com/images/I/71lqDylcvGL.jpg",
+      rate: 4.5,
+      genre: "Action, Crime",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM6X1sACw0mXLCMG-KBzbHNmN5ZgrD39xpkQ&s",
     },
     {
-      title: "Oppenheimer",
+      title: "The Batman",
       id: 2,
-      rate: 4,
-      genre: "biography, drama, history",
-      img: "https://m.media-amazon.com/images/I/71lqDylcvGL.jpg",
+      rate: 4.7,
+      genre: "Action, Crime, Drama",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrzzFYczgufsR1VZbadYvtIvRKYnNnb8tz9w&s",
     },
     {
-      title: "Oppenheimer",
+      title: "Dune",
       id: 3,
-      rate: 4,
-      genre: "biography, drama, history",
-      img: "https://m.media-amazon.com/images/I/71lqDylcvGL.jpg",
+      rate: 4.6,
+      genre: "Adventure, Drama, Sci-Fi",
+      img: "https://images.squarespace-cdn.com/content/v1/552672afe4b0c26feae01486/1637782853123-J37VI8VX2QL82KJP5U5W/DUNE_Indy_Movie_Poster_1.jpeg?format=500w",
     },
     {
-      title: "Oppenheimer",
-      id: 4,
-      rate: 4,
-      genre: "biography, drama, history",
-      img: "https://m.media-amazon.com/images/I/71lqDylcvGL.jpg",
+      title: "John Wick: Chapter 4",
+      id: 1,
+      rate: 4.5,
+      genre: "Action, Crime",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM6X1sACw0mXLCMG-KBzbHNmN5ZgrD39xpkQ&s",
     },
     {
-      e: "Oppenheimer",
-      id: 5,
-      rate: 4,
-      genre: "biography, drama, history",
-      img: "https://m.media-amazon.com/images/I/71lqDylcvGL.jpg",
+      title: "The Batman",
+      id: 2,
+      rate: 4.7,
+      genre: "Action, Crime, Drama",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrzzFYczgufsR1VZbadYvtIvRKYnNnb8tz9w&s",
     },
     {
-      title: "Oppenheimer",
-      id: 6,
-      rate: 4,
-      genre: "biography, drama, history",
-      img: "https://m.media-amazon.com/images/I/71lqDylcvGL.jpg",
+      title: "Dune",
+      id: 3,
+      rate: 4.6,
+      genre: "Adventure, Drama, Sci-Fi",
+      img: "https://images.squarespace-cdn.com/content/v1/552672afe4b0c26feae01486/1637782853123-J37VI8VX2QL82KJP5U5W/DUNE_Indy_Movie_Poster_1.jpeg?format=500w",
     },
   ];
 
@@ -94,7 +95,7 @@ export default function Movie() {
               size={STAR_SIZE}
               color={STAR_COLOR}
             />
-            {data.length === index + 1 ? (
+            {poster.length === index + 1 ? (
               <div style={{ marginRight: 40 }} />
             ) : null}
           </Fragment>
